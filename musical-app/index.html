@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un 
+documento de HTML-->
+
+<html lang="es"> <!--Aqui inicia mi página con la etiqueta de html-->
+<head><!--Aqui en el head esta todo lo que no es visible en la página pero lo hace funcional-->
+<!--Con los metadatos puedo colocar caracteres especiales, dar información al SEO para posicionamiento web-->
+    <meta charset="UTF-8"><!--Permite caracteres especiales-->
+  <meta name="description" content="Musical">
+  <meta name="author" content="Diana Berenice Murillo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+
 <title>Musical Diana</title>
 </head>
 <body>
 
-<h1>Musical Diana</h1>
-<p>Escucha mis 3 canciones de POP</p>
+    <div class="container-musical">
+        <img src="img.musica.jpg" alt="Imagen de muscial app" class="imagen-portada">
+
+        <h1>Musical Diana</h1>
+        <p class="pmusical">BLUE HOUR SONGS</p>
+
+        <div class="lista-canciones">
+            <!--CANCION 1-->
+
+            <div class="canciones">
+                <p>Reflecting Light</p>
+                <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="ReflectingLight.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+             <!--CANCION 2-->
+
+            <div class="canciones">
+                <p>More Than Words</p>
+                <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="MoreThanWords.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+             <!--CANCION 1-->
+
+            <div class="canciones">
+                <p>Let The Light In</p>
+                <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="LetTheLightIn.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+
+
+
+
+            </div>
+
+        
+    
+    
+    
+    
+    </div>
+    
 
 </body>
 </html>
