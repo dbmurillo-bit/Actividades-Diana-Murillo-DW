@@ -23,51 +23,58 @@ documento de HTML-->
 
         <h1>Musical Diana</h1>
         <p class="pmusical">BLUE HOUR SONGS</p>
-
+        <!--
         <div class="lista-canciones">
             <!--CANCION 1-->
 
-            <div class="canciones">
+            <!-- <div class="canciones">
                 <p>Reflecting Light</p>
-                <audio controls class="audio-player">
+                <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="ReflectingLight.mp3" type="audio/mpeg">
+                    <!-- <source src="ReflectingLight.mp3" type="audio/mpeg">
                 </audio>
-            </div>
+            </div> -->
 
              <!--CANCION 2-->
-
-            <div class="canciones">
-                <p>More Than Words</p>
-                <audio controls class="audio-player">
-                    <!-- Mp3 de prueba 1 -->
-                    <source src="MoreThanWords.mp3" type="audio/mpeg">
+            <!-- <div class="canciones">
+                <p>MoreThanWords</p>
+                <audio controls class="audio-player"> -->
+                <!-- Mp3 de prueba 1 -->
+                <!-- <source src="MoreThanWords.mp3" type="audio/mpeg">
                 </audio>
-            </div>
+            </div> -->      
 
-             <!--CANCION 1-->
+             <!--CANCION 3-->
 
-            <div class="canciones">
+            <!--<div class="canciones">
                 <p>Let The Light In</p>
-                <audio controls class="audio-player">
+                <audio controls class="audio-player">-->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="LetTheLightIn.mp3" type="audio/mpeg">
+                 <!--<source src="LetTheLightIn.mp3" type="audio/mpeg">
                 </audio>
             </div>
 
-
-
-
-
-            </div>
-
+            </div> -->
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">Reflecting Light</p>
         
-    
-    
-    
-    
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="ReflectingLight.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>
+
     </div>
     
-
+<script src="script.js"></script>
 </body>
 </html>
